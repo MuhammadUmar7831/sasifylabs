@@ -8,9 +8,9 @@ export default function Awards() {
         <span className="textGradient"> & Recognition</span>
       </h1>
       <p className="headingBottomText w-[1016px]">
-        Celebrated for excellence in digital product development, we&aposve earned
-        top honors from industry leaders. Explore our accolades that showcase
-        our dedication to web and mobile innovation.
+        {
+          "Celebrated for excellence in digital product development, we've earned top honors from industry leaders. Explore our accolades that showcase our dedication to web and mobile innovation."
+        }
       </p>
       <div className="flex gap-5 flex-wrap justify-center mt-10 grayscale filter">
         <div className="glassmorphism rounded-md w-[180px] p-4">
