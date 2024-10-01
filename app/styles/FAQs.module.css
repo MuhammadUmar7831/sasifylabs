@@ -1,0 +1,23 @@
+.gradient {
+    background: linear-gradient(90deg, #7B1ECC 69.66%, #3E0F66 110.21%);
+}
+
+.para {
+    margin: auto;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 8px;
+    font-family: IBMPlexSans;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.btn {
+    padding: 10px 0px;
+    width: 100%;
+    background: linear-gradient(90deg, #3B0762 0%, #3C0763 14.06%, #3D0866 24.56%, #40096A 32.13%, #430A70 37.36%, #470B76 40.87%, #4C0D7E 43.26%, #510F87 45.14%, #561190 47.12%, #5C1399 49.81%, #6215A2 53.82%, #6717AC 59.75%, #6D19B5 68.21%, #721BBD 79.82%, #771CC5 95.17%, #7B1ECC 114.89%);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 900;
+}

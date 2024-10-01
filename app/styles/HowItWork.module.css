@@ -1,0 +1,60 @@
+.howItWorkDividerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howItWorkDividerCircleOuter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #3B0762 0%, #3C0763 14.06%, #3D0866 24.56%, #40096A 32.13%, #430A70 37.36%, #470B76 40.87%, #4C0D7E 43.26%, #510F87 45.14%, #561190 47.12%, #5C1399 49.81%, #6215A2 53.82%, #6717AC 59.75%, #6D19B5 68.21%, #721BBD 79.82%, #771CC5 95.17%, #7B1ECC 114.89%);
+}
+
+.howItWorkDividerCircleInner {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.howItWorkDividerLine {
+    display: block;
+    width: 4px;
+    height: 291px;
+    background: linear-gradient(90deg, #3B0762 0%, #3C0763 14.06%, #3D0866 24.56%, #40096A 32.13%, #430A70 37.36%, #470B76 40.87%, #4C0D7E 43.26%, #510F87 45.14%, #561190 47.12%, #5C1399 49.81%, #6215A2 53.82%, #6717AC 59.75%, #6D19B5 68.21%, #721BBD 79.82%, #771CC5 95.17%, #7B1ECC 114.89%);
+}
+
+.box {
+    width: 500px;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    position: relative;
+    width: 511px;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #3B0762 0%, #3C0763 14.06%, #3D0866 24.56%, #40096A 32.13%, #430A70 37.36%, #470B76 40.87%, #4C0D7E 43.26%, #510F87 45.14%, #561190 47.12%, #5C1399 49.81%, #6215A2 53.82%, #6717AC 59.75%, #6D19B5 68.21%, #721BBD 79.82%, #771CC5 95.17%, #7B1ECC 114.89%);
+}
+
+.boxGlow {
+    position: absolute;
+    background: #7B1ECC;
+    opacity: 0;
+    filter: blur(200px);
+    width: 500px;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    transform: translate(0%, -30%);
+    transition: opacity 0.1s ease;
+    z-index: 0;
+}

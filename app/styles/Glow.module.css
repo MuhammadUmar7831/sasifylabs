@@ -1,0 +1,7 @@
+.glow {
+    position: absolute;
+    background: #7B1ECC;
+    filter: blur(100px);
+    width: 300px;
+    height: 300px;
+}
