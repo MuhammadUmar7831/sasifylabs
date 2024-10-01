@@ -39,7 +39,7 @@ export default function Hero() {
             </li>
             <li>
               <a href="#clientlove" className="text-[17px]">
-                Client's Love
+                {"Client's Love"}
               </a>
             </li>
             <li>
