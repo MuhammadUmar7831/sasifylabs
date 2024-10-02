@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      {/* <About />
-      <HowItWork />
+      <About />
+      {/* <HowItWork />
       <Portfolio />
       <Services />
       <AdditionalServices />
