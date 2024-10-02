@@ -18,12 +18,12 @@ export default function Home() {
       <HowItWork />
       <Portfolio />
       <Services />
-      {/*<AdditionalServices />
+      <AdditionalServices />
       <ClientSays />
       <Awards />
       <FAQs />
       <NewsLetter />
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }

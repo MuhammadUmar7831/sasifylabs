@@ -79,8 +79,7 @@ body {
 }
 
 .sectionPadding {
-  padding-right: 135px;
-  padding-left: 135px;
+  @apply px-[40px] xl:px-[135px]
 }
 
 .heading {
