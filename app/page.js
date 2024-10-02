@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <About />
+      {/* <About />
       <HowItWork />
       <Portfolio />
       <Services />
@@ -23,7 +23,7 @@ export default function Home() {
       <Awards />
       <FAQs />
       <NewsLetter />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

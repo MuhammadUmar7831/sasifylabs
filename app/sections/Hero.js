@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <>
       <header
-        className={`flex justify-between items-center py-[50px] px-[70px]`}
+        className={`flex justify-between items-center py-[50px] px-[35px] xl:px-[70px]`}
       >
         {/* <!-- Glows --> */}
         {/* <Glow top="-150px" left="150px" /> */}
@@ -18,32 +18,32 @@ export default function Hero() {
         <nav className="flex items-center">
           <ul className="flex w-fit gap-10 text-lg IBMPlexSans">
             <li>
-              <a href="#about" className="text-[17px]">
+              <a href="#about" className="text-[14px] xl:text-[17px]">
                 About
               </a>
             </li>
             <li>
-              <a href="#ourprocess" className="text-[17px]">
+              <a href="#ourprocess" className="text-[14px] xl:text-[17px]">
                 Our Process
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="text-[17px]">
+              <a href="#portfolio" className="text-[14px] xl:text-[17px]">
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="#pricing" className="text-[17px]">
+              <a href="#pricing" className="text-[14px] xl:text-[17px]">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="#clientlove" className="text-[17px]">
+              <a href="#clientlove" className="text-[14px] xl:text-[17px]">
                 {"Client's Love"}
               </a>
             </li>
             <li>
-              <a href="#faqs" className="text-[17px]">
+              <a href="#faqs" className="text-[14px] xl:text-[17px]">
                 FAQs
               </a>
             </li>
@@ -51,7 +51,7 @@ export default function Hero() {
         </nav>
         <button className={`btn`}>Contact Us</button>
       </header>
-      <section className="pl-[135px]">
+      <section className="pl-[100px] xl:pl-[135px]">
         <h1 className="textGradient NunitoSans text-[65px] font-black max-w-[800px] uppercase">
           Kickstart Your Journey with Our MVP Launchpad.
         </h1>

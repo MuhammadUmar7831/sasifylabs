@@ -74,8 +74,8 @@ body {
 }
 
 .sectionGap {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .sectionPadding {
@@ -84,9 +84,9 @@ body {
 }
 
 .heading {
-  font-size: 50px;
   font-weight: 900;
   text-align: center;
+  @apply text-[40px] xl:text-[50px]
 }
 
 .headingBottomText {
