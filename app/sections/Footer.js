@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer class="px-10 mt-20 pb-[50px]">
       <div class="flex justify-between">
-        <h1 class="text-[120px] font-black textGradient">Let's Talk</h1>
+        <h1 class="text-[120px] font-black textGradient">{"Let's"} Talk</h1>
         <div class={`${styles.getaQuoteBtn}`}>
           <button>Get a Quote</button>
         </div>
