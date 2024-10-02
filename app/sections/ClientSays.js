@@ -1,4 +1,5 @@
 import React from "react";
+import Glow from "../components/Glow";
 
 function TestimonialCard({ clientData }) {
   const { company, designation, quote, image, clientName } = clientData;
@@ -34,7 +35,8 @@ function TestimonialCard({ clientData }) {
 
 export default function ClientSays() {
   return (
-    <section className="sectionGap">
+    <section className="sectionGap relative">
+      <Glow className="top-[50%] left-[0px]" />
       <h1 className="heading">
         <span>What Our</span>
         <span className="textGradient"> Client Say</span>

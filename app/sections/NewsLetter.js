@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "@/app/styles/News.module.css";
+import Glow from "../components/Glow";
 
 export default function NewsLetter() {
   return (
-    <section className="sectionPadding sectionGap">
+    <section className="sectionPadding sectionGap relative">
+      <Glow className="top-[-30%] right-[0%]" />
+      <Glow className="bottom-[-30%] left-[0%]" />
       <div className="w-full glassmorphism rounded-[5px] py-10 mt-20 mx-auto">
         <h1 className="font-black text-center text-[40px] NunitoSans">
           <span>Newsletter</span>

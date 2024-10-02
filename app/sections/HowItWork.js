@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/app/styles/HowItWork.module.css";
+import Glow from "../components/Glow";
 
 // Reusable HowItWorkBox component
 function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
@@ -35,6 +36,7 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
 export default function HowItWork() {
   return (
     <section className="sectionGap">
+      <Glow className="top-[1376px] right-[-100px]" />
       <h1 className="heading">
         <span>How it</span>
         <span className="textGradient"> Works</span>

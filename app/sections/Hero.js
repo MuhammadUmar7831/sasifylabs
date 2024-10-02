@@ -1,10 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import Glow from "../components/Glow";
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState();
   return (
     <>
+      <Glow className="top-[-50%] left-[150px]" />
       {/* header for laptop screens */}
       <header
         className={`hidden lg:flex justify-between items-center py-[50px] px-[35px] xl:px-[70px]`}
