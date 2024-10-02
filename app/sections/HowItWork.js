@@ -9,7 +9,7 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
         isOnRight ? "flex-col xl:flex-row-reverse" : "flex-col xl:flex-row"
       }`}
     >
-      <div className={`glassmorphism ${styles.box} group md:max-w-[511px] mx-4 xl:mx-0`}>
+      <div className={`glassmorphism ${styles.box} group md:max-w-[511px] mx-4 md:mx-auto xl:mx-0`}>
         <div className={`${styles.boxGlow} group-hover:opacity-100 `}></div>
         <div
           className={`${styles.gradient} text-[20px] md:text-[25px] w-fit rounded-lg px-[5px] py-[1px] font-black NunitoSans`}
