@@ -6,10 +6,10 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
   return (
     <div
       className={`w-full flex flex-wrap justify-center gap-10 ${
-        isOnRight ? "flex-row-reverse" : ""
+        isOnRight ? "flex-col xl:flex-row-reverse" : "flex-col xl:flex-row"
       }`}
     >
-      <div className={`glassmorphism ${styles.box} group max-w-[511px]`}>
+      <div className={`glassmorphism ${styles.box} group max-w-[511px] mx-auto xl:mx-0`}>
         <div className={`${styles.boxGlow} group-hover:opacity-100 `}></div>
         <div
           className={`${styles.gradient} text-[25px] w-fit rounded-lg px-[5px] py-[1px] font-black NunitoSans`}
@@ -27,7 +27,7 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
         </span>
         {!isLast && <span className={styles.howItWorkDividerLine}></span>}
       </div>
-      <div className="w-[511px]"></div>
+      <div className="hidden xl:block w-[511px]"></div>
     </div>
   );
 }
