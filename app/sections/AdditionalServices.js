@@ -4,7 +4,7 @@ import styles from "@/app/styles/AdditionalServices.module.css";
 
 function AdditionalServiceCard({ service }) {
   return (
-    <div className="flex flex-col gap-5 glassmorphism justify-center items-center w-[369px] px-8 py-12 rounded-[5px] mt-[40px]">
+    <div className="flex flex-col gap-5 glassmorphism justify-center items-center w-[369px] px-6 py-12 rounded-[5px] mt-[40px]">
       <div className={`${styles.gradient}`}>
         <img src={service.image} alt={service.name} />
       </div>

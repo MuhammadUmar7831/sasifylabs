@@ -34,7 +34,7 @@ function TestimonialCard({ clientData }) {
 
 export default function ClientSays() {
   return (
-    <section className="sectionGap">
+    <section className="sectionGap sectionPadding">
       <h1 className="heading">
         <span>What Our</span>
         <span className="textGradient"> Client Say</span>

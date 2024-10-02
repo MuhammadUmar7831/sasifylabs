@@ -24,18 +24,25 @@ export default function Portfolio() {
       </p>
       <div className="mt-10 space-y-5">
         <div className="flex overflow-x-hidden gap-[15px]">
-          <img src="/img/work/img1.png" alt="image1" />
-          <img src="/img/work/img2.png" alt="image2" />
-          <img src="/img/work/img3.png" alt="image3" />
-          <img src="/img/work/img4.png" alt="image4" />
+          <img src="/img/work/work5.png" alt="image5" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work6.png" alt="image6" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work7.png" alt="image7" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work8.png" alt="image8" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work1.png" alt="image1" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work2.png" alt="image2" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work3.png" alt="image3" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work4.png" alt="image4" className="w-[378px] h-[267px]"/>
         </div>
 
         <div className="flex overflow-x-hidden flex-shrink-0 gap-[15px]">
-          <img src="/img/work/img5.png" alt="image5" />
-          <img src="/img/work/img6.png" alt="image6" />
-          <img src="/img/work/img7.png" alt="image7" />
-          <img src="/img/work/img8.png" alt="image8" />
-          <img src="/img/work/img9.png" alt="image9" />
+        <img src="/img/work/work1.png" alt="image1" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work2.png" alt="image2" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work3.png" alt="image3" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work4.png" alt="image4" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work5.png" alt="image5" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work6.png" alt="image6" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work7.png" alt="image7" className="w-[378px] h-[267px]"/>
+          <img src="/img/work/work8.png" alt="image8" className="w-[378px] h-[267px]"/>
         </div>
       </div>
 

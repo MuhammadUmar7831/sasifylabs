@@ -9,7 +9,9 @@ function ServiceBox({ title, price, description, features }) {
         <div className="p-1 rounded-full bg-white text-black text-[20px] font-bold w-fit IBMPlexSans leading-[28px]">
           ({price})
         </div>
-        <p className="text-[14px] font-semibold leading-[18px]">{description}</p>
+        <p className="text-[14px] font-semibold leading-[18px]">
+          {description}
+        </p>
       </div>
       <div className="p-4 space-y-[20px]">
         {features.map((feature, index) => (
@@ -18,12 +20,16 @@ function ServiceBox({ title, price, description, features }) {
               src={feature.included ? "./svgs/tick.svg" : "./svgs/cross.svg"}
               alt={feature.included ? "tick" : "cross"}
             />
-            <p className="IBMPlexSans text-[18px] leading-[27px]">{feature.feature}</p>
+            <p className="IBMPlexSans text-[18px] leading-[27px]">
+              {feature.feature}
+            </p>
           </div>
         ))}
       </div>
       <div className="px-4 py-8">
-        <button className={`${styles.subscribeBtn} NunitoSans`}>Subscribe</button>
+        <button className={`${styles.subscribeBtn} NunitoSans`}>
+          Subscribe
+        </button>
       </div>
     </div>
   );
@@ -36,7 +42,7 @@ export default function Services() {
         <span>Services</span>
         <span className="textGradient"> & Pricing</span>
       </h1>
-      <div className="w-full flex justify-between mt-10">
+      <div className="w-full flex justify-center gap-10 mt-10">
         {servicesData.map((service, index) => (
           <ServiceBox
             key={index}

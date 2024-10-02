@@ -8,7 +8,7 @@ export default function Hero() {
         className={`flex justify-between items-center py-[50px] px-[70px]`}
       >
         {/* <!-- Glows --> */}
-        <Glow top="-150px" left="150px" />
+        {/* <Glow top="-150px" left="150px" /> */}
 
         {/* <!-- logo --> */}
         <div>

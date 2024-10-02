@@ -5,7 +5,7 @@ import styles from "@/app/styles/HowItWork.module.css";
 function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
   return (
     <div
-      className={`w-full flex flex-wrap justify-between ${
+      className={`w-full flex flex-wrap justify-center gap-10 ${
         isOnRight ? "flex-row-reverse" : ""
       }`}
     >
@@ -34,7 +34,7 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
 
 export default function HowItWork() {
   return (
-    <section className="sectionGap sectionPadding">
+    <section className="sectionGap">
       <h1 className="heading">
         <span>How it</span>
         <span className="textGradient"> Works</span>
