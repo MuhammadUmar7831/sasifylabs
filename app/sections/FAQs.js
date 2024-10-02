@@ -21,8 +21,8 @@ function FAQBox({ question, answer, collapse }) {
 
 export default function FAQs() {
   return (
-    <section className="sectionGap sectionPadding flex mt-40 justify-evenly gap-10">
-      <div className="w-[40%]">
+    <section className="sectionGap sectionPadding flex flex-col lg:flex-row mt-40 justify-evenly gap-10">
+      <div className="lg:w-[40%]">
         <h1 className="heading">
           <span>Frequently</span>
           <span className="textGradient"> Asked Questions</span>
@@ -40,7 +40,7 @@ export default function FAQs() {
           </button>
         </div>
       </div>
-      <div className="w-[60%] space-y-5">
+      <div className="lg:w-[60%] space-y-5">
         {faqs.map((faq, idx) => (
           <FAQBox
             key={idx}

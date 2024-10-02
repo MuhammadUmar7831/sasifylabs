@@ -13,7 +13,7 @@ import Awards from "./sections/Awards";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Hero /> 
       <About />
       <HowItWork />
       <Portfolio />
@@ -21,9 +21,8 @@ export default function Home() {
       <AdditionalServices />
       <ClientSays />
       <Awards />
-      <FAQs />
       <NewsLetter />
-      <Footer />
+       <Footer />
     </main>
   );
 }

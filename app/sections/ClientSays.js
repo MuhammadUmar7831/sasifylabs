@@ -19,7 +19,7 @@ function TestimonialCard({ clientData }) {
       </div>
       <div className="flex gap-5">
         <img
-          className="w-16 aspect-square rounded-full"
+          className="w-16 h-16 rounded-full"
           src={`/img/client/${image}`}
           alt={clientName}
         />

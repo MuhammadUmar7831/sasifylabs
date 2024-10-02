@@ -2,7 +2,7 @@ import React from "react";
 
 function GlassBoxItem({ title, description }) {
   return (
-    <div className="flex w-[30%]">
+    <div className="flex w-[45%] lg:w-[30%]">
       <img src="/svgs/upArrow.svg" alt="icon" className="w-[49px] h-[52px]" />
       <div>
         <h2 className="text-[25px] font-black NunitoSans">{title}</h2>
