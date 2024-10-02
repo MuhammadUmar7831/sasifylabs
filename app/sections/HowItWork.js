@@ -9,17 +9,17 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
         isOnRight ? "flex-col xl:flex-row-reverse" : "flex-col xl:flex-row"
       }`}
     >
-      <div className={`glassmorphism ${styles.box} group max-w-[511px] mx-auto xl:mx-0`}>
+      <div className={`glassmorphism ${styles.box} group md:max-w-[511px] mx-4 xl:mx-0`}>
         <div className={`${styles.boxGlow} group-hover:opacity-100 `}></div>
         <div
-          className={`${styles.gradient} text-[25px] w-fit rounded-lg px-[5px] py-[1px] font-black NunitoSans`}
+          className={`${styles.gradient} text-[20px] md:text-[25px] w-fit rounded-lg px-[5px] py-[1px] font-black NunitoSans`}
         >
           <h3>Step-{step}</h3>
         </div>
-        <h1 className="text-[35px] font-black w-2/3 leading-[36px] NunitoSans">
+        <h1 className="text-[25px] md:text-[35px] font-black w-2/3 leading-[36px] NunitoSans">
           {heading}
         </h1>
-        <p className="text-[18px] font-normal mt-[15px] IBMPlexSans">{para}</p>
+        <p className="md:text-[18px] font-normal mt-[15px] IBMPlexSans">{para}</p>
       </div>
       <div className={styles.howItWorkDividerSection}>
         <span className={styles.howItWorkDividerCircleOuter}>

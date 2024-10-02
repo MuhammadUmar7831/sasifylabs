@@ -5,6 +5,7 @@ export default function Hero() {
   const [menuOpen, setMenuOpen] = useState();
   return (
     <>
+      {/* header for laptop screens */}
       <header
         className={`hidden lg:flex justify-between items-center py-[50px] px-[35px] xl:px-[70px]`}
       >
@@ -49,7 +50,8 @@ export default function Hero() {
         </nav>
         <button className={`btn`}>Contact Us</button>
       </header>
-      <header className="relative w-full lg:hidden flex justify-end p-[35px]">
+      {/* header for mobile & tablet */}
+      <header className="relative w-full lg:hidden flex justify-end p-[20px] md:p-[35px] z-10">
         {menuOpen ? (
           <div
             onClick={() => setMenuOpen(false)}
@@ -113,8 +115,8 @@ export default function Hero() {
         )}
       </header>
 
-      <section className="pl-[100px] xl:pl-[135px]">
-        <h1 className="textGradient NunitoSans text-[65px] font-black lg:max-w-[800px] uppercase">
+      <section className="mx-4 md:pl-[100px] xl:pl-[135px]">
+        <h1 className="textGradient NunitoSans text-[40px] md:text-[65px] font-black lg:max-w-[800px] uppercase">
           Kickstart Your Journey with Our MVP Launchpad.
         </h1>
         <p className="my-5 IBMPlexSans lg:w-[800px] text-[18px] font-medium">

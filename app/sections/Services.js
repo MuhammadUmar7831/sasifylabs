@@ -3,7 +3,7 @@ import styles from "@/app/styles/Services.module.css";
 
 function ServiceBox({ title, price, description, features }) {
   return (
-    <div className="w-[40%] lg:w-[367px] glassmorphism rounded-[5px] h-fit">
+    <div className="md:w-[40%] lg:w-[367px] glassmorphism rounded-[5px] h-fit">
       <div className={`${styles.gradeint} px-10 py-6 space-y-2`}>
         <h1 className="text-[25px] font-black NunitoSans">{title}</h1>
         <div className="p-1 rounded-full bg-white text-black text-[20px] font-bold w-fit IBMPlexSans leading-[28px]">

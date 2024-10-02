@@ -24,7 +24,7 @@ export default function About() {
           "We empower startups to launch market-ready SaaS products swiftly. Our MVP Launchpad Package, tailored for Silicon Valley's innovators and beyond, ensures timely, budget-aligned launches without scope creep."
         }
       </p>
-      <div class="flex justify-center gap-10 mt-10">
+      <div class="flex justify-center flex-col md:flex-row gap-2 md:gap-10 mt-10">
         <button class="btn">Realize Your Vision</button>
         <button class="btn">Explore Our Services</button>
       </div>
