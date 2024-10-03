@@ -121,3 +121,12 @@ body {
 .boxystyle {
   @apply max-w-[1169px]
 }
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 5s linear infinite;
+}

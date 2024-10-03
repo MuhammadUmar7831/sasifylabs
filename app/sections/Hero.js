@@ -132,10 +132,10 @@ export default function Hero() {
           <div className="verticalDivider h-[583px] bottom-0 right-[500px] absolute" />
           <div className="verticalDivider h-[500px] bottom-0 right-[400px] absolute" />
           <div className="verticalDivider h-[459px] bottom-0 right-[300px] absolute" />
-          <div className="absolute flex items-end bottom-0 right-[170px]">
-            <img src="./svgs/scrolllerCircle.svg" alt="scrolllerCircle" className="pb-4"/>
+          <div className="absolute flex items-end bottom-0 right-[168px]">
+            <img src="./svgs/scrolllerCircle.svg" alt="scrolllerCircle" className="p-4 spin"/>
             {/* <div className="w-[50px]"/> */}
-            <div className="verticalDivider h-[366px] ml-[10px]" />
+            <div className="verticalDivider h-[366px]" />
           </div>
         </div>
       </section>
