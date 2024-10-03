@@ -53,7 +53,7 @@ export default function Portfolio() {
       </p>
       <div className="mt-10 space-y-5">
         <ImageSlider urls={images1} />
-        <ImageSlider urls={images2} className="translate-x-[-100px]" />
+        <ImageSlider urls={images2} className="ml-[100px]" />
       </div>
 
       {/* Rendering the GlassBoxItems dynamically */}

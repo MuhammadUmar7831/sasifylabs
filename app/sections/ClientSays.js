@@ -1,12 +1,13 @@
 import React from "react";
 import Glow from "../components/Glow";
 import Design from "../components/Design";
+import styles from "@/app/styles/ClientSays.module.css"
 
 function TestimonialCard({ clientData }) {
   const { company, designation, quote, image, clientName } = clientData;
 
   return (
-    <div className="glassmorphism md:w-[40%] xl:w-[30%] px-6 py-12 space-y-4 rounded-[5px] h-fit mx-2">
+    <div className="glassmorphism w-[500px] px-6 py-12 space-y-4 rounded-[5px] h-fit mx-2">
       <img src="./svgs/quote.svg" alt="quote" />
       <div className="flex gap-1">
         <img className="w-6 h-6" src="./svgs/star.svg" alt="star" />
@@ -48,7 +49,18 @@ export default function ClientSays() {
         Voices of Success: Hear From Our Clients How We Consistently Exceed
         Expectations
       </p>
-      <div className="flex justify-evenly flex-wrap gap-7 mt-10">
+      <div className={`flex overflow-hidden w-max flex-wrap gap-7 mt-10 ${styles.scrollingContent}`}>
+        {clientData.map((client, index) => (
+          <TestimonialCard key={index} clientData={client} />
+        ))}
+        {clientData.map((client, index) => (
+          <TestimonialCard key={index} clientData={client} />
+        ))}
+      </div>
+      <div className={`flex overflow-hidden w-max flex-wrap gap-7 ml-[100px] mt-10 ${styles.scrollingContent}`}>
+        {clientData.map((client, index) => (
+          <TestimonialCard key={index} clientData={client} />
+        ))}
         {clientData.map((client, index) => (
           <TestimonialCard key={index} clientData={client} />
         ))}
