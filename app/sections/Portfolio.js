@@ -1,6 +1,7 @@
 import React from "react";
 import Glow from "../components/Glow";
 import Design from "../components/Design";
+import styles from "@/app/styles/Portfolio.module.css";
 
 function GlassBoxItem({ title, description }) {
   return (
@@ -10,6 +11,30 @@ function GlassBoxItem({ title, description }) {
         <h2 className="text-[25px] font-black NunitoSans">{title}</h2>
         <p className="text-[18px] IBMPlexSans">{description}</p>
       </div>
+    </div>
+  );
+}
+
+function ImageSlider({ urls, className }) {
+  return (
+    <div
+      data={"20s"}
+      className={`flex overflow-x-hidden gap-[15px] ${className} ${styles.scrollingContent}`}
+    >
+      {urls.map((url) => (
+        <img
+          src={`/img/work/${url}`}
+          alt={url}
+          className="w-[378px] h-[267px]"
+        />
+      ))}
+      {urls.map((url) => (
+        <img
+          src={`/img/work/${url}`}
+          alt={url}
+          className="w-[378px] h-[267px]"
+        />
+      ))}
     </div>
   );
 }
@@ -27,27 +52,8 @@ export default function Portfolio() {
         Check out some of our recent work for clients!
       </p>
       <div className="mt-10 space-y-5">
-        <div className="flex overflow-x-hidden gap-[15px]">
-          <img src="/img/work/work5.png" alt="image5" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work6.png" alt="image6" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work7.png" alt="image7" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work8.png" alt="image8" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work1.png" alt="image1" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work2.png" alt="image2" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work3.png" alt="image3" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work4.png" alt="image4" className="w-[378px] h-[267px]"/>
-        </div>
-
-        <div className="flex overflow-x-hidden flex-shrink-0 gap-[15px]">
-        <img src="/img/work/work1.png" alt="image1" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work2.png" alt="image2" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work3.png" alt="image3" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work4.png" alt="image4" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work5.png" alt="image5" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work6.png" alt="image6" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work7.png" alt="image7" className="w-[378px] h-[267px]"/>
-          <img src="/img/work/work8.png" alt="image8" className="w-[378px] h-[267px]"/>
-        </div>
+        <ImageSlider urls={images1} />
+        <ImageSlider urls={images2} className="translate-x-[-100px]" />
       </div>
 
       {/* Rendering the GlassBoxItems dynamically */}
@@ -94,4 +100,23 @@ const glassBoxData = [
     description:
       "A testament to our trusted client relationships and consistent performance.",
   },
+];
+
+const images1 = [
+  "work5.png",
+  "work6.png",
+  "work7.png",
+  "work1.png",
+  "work2.png",
+  "work3.png",
+  "work4.png",
+];
+const images2 = [
+  "work1.png",
+  "work2.png",
+  "work3.png",
+  "work4.png",
+  "work5.png",
+  "work6.png",
+  "work7.png",
 ];
