@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/app/styles/Services.module.css";
+import Design from "../components/Design";
 
 function ServiceBox({ title, price, description, features }) {
   return (
@@ -37,7 +38,8 @@ function ServiceBox({ title, price, description, features }) {
 
 export default function Services() {
   return (
-    <section className="sectionGap sectionPadding">
+    <section className="sectionGap sectionPadding relative">
+      <Design className="top-[-150px] right-0 scale-x-[-1]" />
       <h1 className="heading">
         <span>Services</span>
         <span className="textGradient"> & Pricing</span>

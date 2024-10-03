@@ -1,5 +1,6 @@
 import React from "react";
 import Glow from "../components/Glow";
+import Design from "../components/Design";
 
 function GlassBoxItem({ title, description }) {
   return (
@@ -15,8 +16,9 @@ function GlassBoxItem({ title, description }) {
 
 export default function Portfolio() {
   return (
-    <section className="sectionGap">
-      <Glow className="top-[3700px] left-[0px]" />
+    <section className="sectionGap relative">
+      <Glow className="top-[350px] left-[-100px]" />
+      <Design className="top-[-150px]" />
       <h1 className="heading">
         <span>Our Work</span>
         <span className="textGradient"> Portfolio</span>

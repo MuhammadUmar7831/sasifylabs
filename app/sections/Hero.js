@@ -6,7 +6,7 @@ export default function Hero() {
   const [menuOpen, setMenuOpen] = useState();
   return (
     <>
-      <Glow className="top-[-50%] left-[150px]" />
+      <Glow className="top-[-50%] left-[0px]" />
       {/* header for laptop screens */}
       <header
         className={`hidden lg:flex justify-between items-center py-[50px] px-[35px] xl:px-[70px]`}

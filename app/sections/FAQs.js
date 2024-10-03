@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/app/styles/FAQs.module.css";
+import Design from "../components/Design";
 
 function FAQBox({ question, answer, collapse }) {
   return (
@@ -21,7 +22,9 @@ function FAQBox({ question, answer, collapse }) {
 
 export default function FAQs() {
   return (
-    <section className="sectionGap sectionPadding flex flex-col lg:flex-row mt-40 justify-evenly gap-10">
+    <section className="sectionGap sectionPadding flex flex-col lg:flex-row mt-40 justify-evenly gap-10 relative">
+      <Design className="bottom-[100px] left-0" />
+      <Design className="bottom-[-150px] right-0  scale-x-[-1]" />
       <div className="lg:w-[40%]">
         <h1 className="heading">
           <span>Frequently</span>

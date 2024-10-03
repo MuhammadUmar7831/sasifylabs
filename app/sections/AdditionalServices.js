@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/app/styles/AdditionalServices.module.css";
+import Design from "../components/Design";
 
 
 function AdditionalServiceCard({ service }) {
@@ -18,7 +19,9 @@ function AdditionalServiceCard({ service }) {
 
 export default function AdditionalServices() {
   return (
-    <section className="sectionGap">
+    <section className="sectionGap relative">
+      <Design className="top-[-150px] left-0" />
+      <Design className="top-[-100px] right-0 scale-x-[-1]" />
       <h1 className="heading">
         <span>Additional</span>
         <span className="textGradient"> Expertise & Services</span>

@@ -12,7 +12,7 @@ import Awards from "./sections/Awards";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero />
       <About />
       <HowItWork />
@@ -21,6 +21,7 @@ export default function Home() {
       <AdditionalServices />
       <ClientSays />
       <Awards />
+      <FAQs />
       <NewsLetter />
       <Footer />
     </main>
