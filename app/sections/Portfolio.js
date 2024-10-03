@@ -21,15 +21,17 @@ function ImageSlider({ urls, className }) {
       data={"20s"}
       className={`flex overflow-x-hidden gap-[15px] ${className} ${styles.scrollingContent}`}
     >
-      {urls.map((url) => (
+      {urls.map((url, idx) => (
         <img
+          key={idx}
           src={`/img/work/${url}`}
           alt={url}
           className="w-[378px] h-[267px]"
         />
       ))}
-      {urls.map((url) => (
+      {urls.map((url, idx) => (
         <img
+          key={idx}
           src={`/img/work/${url}`}
           alt={url}
           className="w-[378px] h-[267px]"
