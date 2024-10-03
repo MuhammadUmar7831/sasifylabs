@@ -59,7 +59,8 @@ export default function Portfolio() {
       </div>
 
       {/* Rendering the GlassBoxItems dynamically */}
-      <div className="mt-20 w-[90%] glassmorphism mx-auto flex flex-wrap justify-between gap-10 px-4 py-16 rounded-[5px]">
+      <div className="boxystyle relative mt-20 w-[90%] glassmorphism mx-auto flex flex-wrap justify-between gap-10 px-4 py-16 rounded-[5px]">
+      <Glow className="top-[0px] left-[0px] translate-x-[-50%] translate-y-[-50%] bg-opacity-90" />
         {glassBoxData.map((item, index) => (
           <GlassBoxItem
             key={index}

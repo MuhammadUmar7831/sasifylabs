@@ -1,17 +1,45 @@
+"use client";
 import React from "react";
 import styles from "@/app/styles/HowItWork.module.css";
 import Glow from "../components/Glow";
 import Design from "../components/Design";
+import { motion } from "framer-motion";
 
 // Reusable HowItWorkBox component
 function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
+  const fadeInVariants = {
+    hidden: {
+      opacity: 0,
+      x: isOnRight ? 100 : -100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
+  const grayscaleVariants = {
+    hidden: { filter: "grayscale(100%)" },
+    visible: {
+      filter: "grayscale(0%)",
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
   return (
     <div
       className={`w-full flex flex-wrap justify-center gap-10 ${
         isOnRight ? "flex-col xl:flex-row-reverse" : "flex-col xl:flex-row"
       }`}
     >
-      <div className={`glassmorphism ${styles.box} group md:max-w-[511px] mx-4 md:mx-auto xl:mx-0`}>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeInVariants}
+        className={`glassmorphism ${styles.box} group md:max-w-[511px] mx-4 md:mx-auto xl:mx-0 overflow-x-hidden`}
+      >
         <div className={`${styles.boxGlow} group-hover:opacity-100 `}></div>
         <div
           className={`${styles.gradient} text-[20px] md:text-[25px] w-fit rounded-lg px-[5px] py-[1px] font-black NunitoSans`}
@@ -21,13 +49,23 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
         <h1 className="text-[25px] md:text-[35px] font-black w-2/3 leading-[36px] NunitoSans">
           {heading}
         </h1>
-        <p className="md:text-[18px] font-normal mt-[15px] IBMPlexSans">{para}</p>
-      </div>
+        <p className="md:text-[18px] font-normal mt-[15px] IBMPlexSans">
+          {para}
+        </p>
+      </motion.div>
       <div className={styles.howItWorkDividerSection}>
         <span className={styles.howItWorkDividerCircleOuter}>
           <span className={styles.howItWorkDividerCircleInner}></span>
         </span>
-        {!isLast && <span className={styles.howItWorkDividerLine}></span>}
+        {!isLast && (
+          <motion.span
+            className={styles.howItWorkDividerLine}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={grayscaleVariants}
+          ></motion.span>
+        )}
       </div>
       <div className="hidden xl:block w-[511px]"></div>
     </div>

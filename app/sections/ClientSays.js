@@ -7,7 +7,7 @@ function TestimonialCard({ clientData }) {
   const { company, designation, quote, image, clientName } = clientData;
 
   return (
-    <div className="glassmorphism w-[500px] px-6 py-12 space-y-4 rounded-[5px] h-fit mx-2">
+    <div className="glassmorphism w-[500px] px-6 py-12 space-y-4 rounded-[5px] mx-2">
       <img src="./svgs/quote.svg" alt="quote" />
       <div className="flex gap-1">
         <img className="w-6 h-6" src="./svgs/star.svg" alt="star" />

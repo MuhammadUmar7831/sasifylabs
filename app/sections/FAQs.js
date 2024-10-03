@@ -1,19 +1,24 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "@/app/styles/FAQs.module.css";
 import Design from "../components/Design";
 
 function FAQBox({ question, answer, collapse }) {
+  const [toggle, setToggle] = useState(collapse);
   return (
-    <div className="glassmorphism p-4 rounded-md space-y-4">
+    <div className="glassmorphism p-4 rounded-md space-y-4 transition-all">
       <div className="flex justify-between">
         <h3 className="text-[21px] IBMPlexSans font-bold">{question}</h3>
         <img
+          onClick={() => setToggle(!toggle)}
           src="./svgs/upArrow-faq.svg"
           alt="uparrow-faq"
-          className={`${styles.gradient} p-2 rounded-md aspect-square h-fit`}
+          className={`${styles.gradient} p-2 rounded-md aspect-square h-fit ${
+            !toggle ? "scale-y-[-1]" : ""
+          }`}
         />
       </div>
-      {!collapse && (
+      {!toggle && (
         <p className="IBMPlexSans pr-12 text-[18px] leading-[27px]">{answer}</p>
       )}
     </div>

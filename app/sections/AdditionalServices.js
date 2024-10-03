@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/app/styles/AdditionalServices.module.css";
 import Design from "../components/Design";
+import Glow from "../components/Glow";
 
 
 function AdditionalServiceCard({ service }) {
@@ -20,13 +21,14 @@ function AdditionalServiceCard({ service }) {
 export default function AdditionalServices() {
   return (
     <section className="sectionGap relative">
+      <Glow className="top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
       <Design className="top-[-150px] left-0" />
       <Design className="top-[-100px] right-0 scale-x-[-1]" />
       <h1 className="heading">
         <span>Additional</span>
         <span className="textGradient"> Expertise & Services</span>
       </h1>
-      <div className="w-full mt-20 flex flex-wrap gap-14 justify-center">
+      <div className="boxystyle mx-auto w-full mt-20 flex flex-wrap gap-7 justify-center">
         {services.map((service, index) => (
           <AdditionalServiceCard key={index} service={service} />
         ))}

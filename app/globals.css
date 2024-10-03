@@ -117,3 +117,7 @@ body {
   opacity: 5%;
   @apply w-[1px]
 }
+
+.boxystyle {
+  @apply max-w-[1169px]
+}

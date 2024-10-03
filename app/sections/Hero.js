@@ -7,7 +7,7 @@ export default function Hero() {
   const [menuOpen, setMenuOpen] = useState();
   return (
     <>
-      <Glow className="top-[-50%] left-[0px]" />
+      <Glow className="top-[-30%] left-[100px]" />
       {/* header for laptop screens */}
       <header
         className={`hidden lg:flex justify-between items-center py-[50px] px-[35px] xl:px-[70px]`}
@@ -118,7 +118,7 @@ export default function Hero() {
         )}
       </header>
 
-      <section className="mx-4 md:pl-[100px] xl:pl-[135px]">
+      <section className="max-w-[1440px] mx-4 xl:mx-auto md:pl-[100px] xl:pl-[135px]">
         <h1 className="textGradient NunitoSans text-[40px] md:text-[65px] font-black lg:max-w-[800px] uppercase">
           Kickstart Your Journey with Our MVP Launchpad.
         </h1>

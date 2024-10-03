@@ -15,7 +15,7 @@ export default function Awards() {
           "Celebrated for excellence in digital product development, we've earned top honors from industry leaders. Explore our accolades that showcase our dedication to web and mobile innovation."
         }
       </p>
-      <div className="flex gap-5 flex-wrap justify-center mt-10 grayscale filter">
+      <div className="boxystyle mx-auto flex gap-4 flex-wrap justify-center mt-10 grayscale filter">
         <div className="glassmorphism rounded-md w-[180px] p-4">
           <img src="./img/awards/clutch.png" alt="clutch" />
         </div>

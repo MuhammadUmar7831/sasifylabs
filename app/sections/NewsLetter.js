@@ -4,10 +4,10 @@ import Glow from "../components/Glow";
 
 export default function NewsLetter() {
   return (
-    <section className="sectionPadding sectionGap relative">
-      <Glow className="top-[-30%] right-[0%]" />
-      <Glow className="bottom-[-30%] left-[0%]" />
-      <div className="w-full glassmorphism rounded-[5px] py-10 mt-20 mx-auto">
+    <section className="sectionPadding sectionGap">
+      <div className="boxystyle w-full glassmorphism rounded-[5px] py-10 mt-20 mx-auto relative">
+        <Glow className="top-[0px] right-[0%] translate-y-[-50%] translate-x-[50%]" />
+        <Glow className="bottom-[0px] left-[0px] translate-x-[-50%] translate-y-[50%]" />
         <h1 className="font-black text-center text-[40px] NunitoSans">
           <span>Newsletter</span>
           <span className="textGradient"> Subscription</span>
@@ -38,7 +38,9 @@ export default function NewsLetter() {
             placeholder="Email Address*"
             className="bg-white rounded-md px-6 py-4 w-full text-black focus:outline-none"
           />
-          <button className={`${styles.btn}`}>Subscribe To Our News Letter</button>
+          <button className={`${styles.btn}`}>
+            Subscribe To Our News Letter
+          </button>
         </div>
         <p className="mt-5 IBMPlexSans lg:w-[756px] mx-auto text-center">
           We value your privacy: no spam, just valuable updates and industry
