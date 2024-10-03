@@ -1,0 +1,28 @@
+.scrollingWrapper {
+    display: flex;
+    overflow-x: hidden;
+    width: max-content;
+}
+
+.scrollingContent {
+    padding-left: 50px;
+    display: flex;
+    gap: 50px;
+    animation: scroll-left 20s linear infinite;
+    width: max-content;
+}
+
+.scrollingContent img {
+    width: 100px;
+    height: auto;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100%));
+    }
+}

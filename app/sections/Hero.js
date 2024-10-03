@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Glow from "../components/Glow";
+import styles from "@/app/styles/Hero.module.css";
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState();
@@ -130,18 +131,29 @@ export default function Hero() {
       </section>
 
       {/* <!-- trusted by --> */}
-      <section className="sectionGap overflow-x-hidden">
+      <section className="sectionGap w-[80%] xl:w-[60%] overflow-x-hidden mx-auto">
         <h1 class="heading">
           <span>Trusted by</span>
           <span class="textGradient"> Innovators and Leaders</span>
         </h1>
-        <div class="flex justify-center mt-5 gap-[50px]">
-          <img src="./svgs/stera.svg" alt="stera" />
-          <img src="./svgs/leadQuiz.svg" alt="leadQuiz" />
-          <img src="./svgs/lifeInc.svg" alt="lifeInc" />
-          <img src="./svgs/onSite.svg" alt="onSite" />
-          <img src="./svgs/pixcile.svg" alt="pixcile" />
-          <img src="./svgs/smartAnswers.svg" alt="smartAnswers" />
+        <div className={`${styles.scrollingWrapper} mt-10`}>
+          <div className={`${styles.scrollingContent}`}>
+            <img src="./svgs/stera.svg" alt="stera" />
+            <img src="./svgs/leadQuiz.svg" alt="leadQuiz" />
+            <img src="./svgs/lifeInc.svg" alt="lifeInc" />
+            <img src="./svgs/onSite.svg" alt="onSite" />
+            <img src="./svgs/pixcile.svg" alt="pixcile" />
+            <img src="./svgs/smartAnswers.svg" alt="smartAnswers" />
+          </div>
+          {/*duplicate*/}
+          <div className={`${styles.scrollingContent}`}>
+            <img src="./svgs/stera.svg" alt="stera" />
+            <img src="./svgs/leadQuiz.svg" alt="leadQuiz" />
+            <img src="./svgs/lifeInc.svg" alt="lifeInc" />
+            <img src="./svgs/onSite.svg" alt="onSite" />
+            <img src="./svgs/pixcile.svg" alt="pixcile" />
+            <img src="./svgs/smartAnswers.svg" alt="smartAnswers" />
+          </div>
         </div>
       </section>
     </>
