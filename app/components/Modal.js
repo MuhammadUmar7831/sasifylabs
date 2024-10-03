@@ -6,14 +6,14 @@ export default function Modal({ open, setOpen }) {
     return <></>;
   }
   return (
-    <div className="fixed top-0 left-0 w-full h-screen z-20 flex justify-center items-center bg-black">
+    <div className="fixed top-0 left-0 w-full h-screen z-10 flex justify-center items-center bg-black overflow-y-scroll py-2">
       <img
         onClick={() => setOpen(false)}
         src="/svgs/modal/cross.svg"
         alt="cross"
-        className="absolute top-2 right-2 cursor-pointer"
+        className="absolute top-2 right-2 cursor-pointer z-10"
       />
-      <div className="glassmorphism w-[90%] h-[90%s] rounded-[5px] flex justify-evenly items-center flex-col xl:flex-row p-4 z-20">
+      <div className="glassmorphism w-[90%] h-[90%s] rounded-[5px] flex justify-evenly items-center flex-col xl:flex-row p-4">
         <div className="w-full xl:w-[45%]">
           <h1 className="uppercase NunitoSans text-[40px] xl:text-[60px] font-black leading-[77px]">
             Kick off your project with us!
@@ -51,8 +51,8 @@ export default function Modal({ open, setOpen }) {
             </div>
           </div>
         </div>
-        <div className="w-full xl:w-[45%]">
-          <div className="flex gap-5">
+        <div className="w-full mt-10 xl:mt-0 xl:w-[45%]">
+          <div className="flex flex-col md:flex-row gap-5">
             <input
               className="bg-[#eeeeee] rounded-[10px] bg-opacity-25 IBMPlexSans xl:text-[18px] font-medium px-2 py-2"
               placeholder="First Name*"
@@ -62,7 +62,7 @@ export default function Modal({ open, setOpen }) {
               placeholder="Last Name*"
             />
           </div>
-          <div className="flex gap-5 mt-5">
+          <div className="flex flex-col md:flex-row gap-5 mt-5">
             <input
               className="bg-[#eeeeee] rounded-[10px] bg-opacity-25 IBMPlexSans xl:text-[18px] font-medium px-2 py-2"
               placeholder="Email Addres*"
