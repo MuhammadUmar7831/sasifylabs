@@ -128,9 +128,20 @@ export default function Hero() {
           just 16 weeks.
         </p>
         <button className={`btn`}>Get Started</button>
+        <div className="hidden xl:flex justify-end px-20 relative mt-10">
+          <div className="verticalDivider h-[583px] bottom-0 right-[500px] absolute" />
+          <div className="verticalDivider h-[500px] bottom-0 right-[400px] absolute" />
+          <div className="verticalDivider h-[459px] bottom-0 right-[300px] absolute" />
+          <div className="absolute flex items-end bottom-0 right-[170px]">
+            <img src="./svgs/scrolllerCircle.svg" alt="scrolllerCircle" className="pb-4"/>
+            {/* <div className="w-[50px]"/> */}
+            <div className="verticalDivider h-[366px] ml-[10px]" />
+          </div>
+        </div>
       </section>
 
       {/* <!-- trusted by --> */}
+      <div className="sectionDivider" />
       <section className="sectionGap w-[80%] xl:w-[60%] overflow-x-hidden mx-auto">
         <h1 class="heading">
           <span>Trusted by</span>
@@ -156,6 +167,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
+      <div className="sectionDivider" />
     </>
   );
 }

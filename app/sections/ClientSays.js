@@ -57,7 +57,7 @@ export default function ClientSays() {
           <TestimonialCard key={index} clientData={client} />
         ))}
       </div>
-      <div className={`flex overflow-hidden w-max flex-wrap gap-7 ml-[100px] mt-10 ${styles.scrollingContent}`}>
+      <div className={`flex overflow-hidden w-max flex-wrap gap-7 ml-[-100px] mt-10 ${styles.scrollingContent}`}>
         {clientData.map((client, index) => (
           <TestimonialCard key={index} clientData={client} />
         ))}

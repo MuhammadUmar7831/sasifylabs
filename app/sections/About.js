@@ -3,9 +3,8 @@ import Design from "../components/Design";
 
 export default function About() {
   return (
-    <>
-      <Design className="left-0" />
-      <section className="sectionGap sectionPadding">
+      <section className="sectionGap sectionPadding relative">
+        <Design className="top-0 left-0" />
         <h1 class="heading ">
           <span>About</span>
           <span class="textGradient"> Us</span>
@@ -32,6 +31,5 @@ export default function About() {
           <button class="btn">Explore Our Services</button>
         </div>
       </section>
-    </>
   );
 }

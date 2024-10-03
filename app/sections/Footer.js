@@ -1,13 +1,17 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import styles from "@/app/styles/Footer.module.css";
+import Modal from "../components/Modal";
 
 export default function Footer() {
+const [open, setOpen] = useState(false);
   return (
-    <footer className="sectionGap sectionPadding">
+    <footer className="sectionGap sectionPadding relative">
+      {<Modal open={open} setOpen={setOpen}/>}
       <div className="flex justify-between items-center">
         <h1 className="text-[70px] lg:text-[120px] font-black textGradient">{"Let's"} Talk</h1>
         <div className={`${styles.getaQuoteBtn}`}>
-          <button>Get a Quote</button>
+          <button onClick={()=>setOpen(true)}>Get a Quote</button>
         </div>
       </div>
       <div className="flex mt-10 justify-between flex-col lg:flex-row border-b pb-5 gap-5">

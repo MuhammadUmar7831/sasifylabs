@@ -15,8 +15,8 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: black;
   color: white;
+  @apply bg-black
 }
 
 /*Fonts*/
@@ -104,4 +104,16 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sectionDivider {
+  background-color: #FFFFFF;
+  opacity: 5%;
+  @apply w-screen h-[1px]
+}
+
+.verticalDivider {
+  background-color: #FFFFFF;
+  opacity: 5%;
+  @apply w-[1px]
 }
