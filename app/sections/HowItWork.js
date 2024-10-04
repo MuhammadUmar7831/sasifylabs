@@ -28,7 +28,8 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
   };
 
   return (
-    <div
+    <section
+      id="ourprocess"
       className={`w-full flex flex-wrap justify-center gap-10 ${
         isOnRight ? "flex-col xl:flex-row-reverse" : "flex-col xl:flex-row"
       }`}
@@ -68,7 +69,7 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
         )}
       </div>
       <div className="hidden xl:block w-[511px]"></div>
-    </div>
+    </section>
   );
 }
 

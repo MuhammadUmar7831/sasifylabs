@@ -43,7 +43,7 @@ function ImageSlider({ urls, className }) {
 
 export default function Portfolio() {
   return (
-    <section className="sectionGap relative">
+    <section id="portfolio" className="sectionGap relative">
       <Glow className="top-[350px] left-[-100px]" />
       <Design className="top-[-150px]" />
       <h1 className="heading">

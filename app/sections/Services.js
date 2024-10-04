@@ -38,7 +38,7 @@ function ServiceBox({ title, price, description, features }) {
 
 export default function Services() {
   return (
-    <section className="sectionGap sectionPadding relative">
+    <section id="pricing" className="sectionGap sectionPadding relative">
       <Design className="top-[-150px] right-0 scale-x-[-1]" />
       <h1 className="heading">
         <span>Services</span>

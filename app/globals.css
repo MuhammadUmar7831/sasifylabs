@@ -9,6 +9,7 @@
   color: white;
   z-index: 1;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -124,9 +125,10 @@ body {
 
 @keyframes spin {
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
+
 .spin {
   animation: spin 5s linear infinite;
 }

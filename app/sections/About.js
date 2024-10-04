@@ -3,7 +3,7 @@ import Design from "../components/Design";
 
 export default function About() {
   return (
-      <section className="sectionGap sectionPadding relative">
+      <section id="about" className="sectionGap sectionPadding relative">
         <Design className="top-0 left-0" />
         <h1 class="heading ">
           <span>About</span>

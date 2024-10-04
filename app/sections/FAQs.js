@@ -27,7 +27,7 @@ function FAQBox({ question, answer, collapse }) {
 
 export default function FAQs() {
   return (
-    <section className="sectionGap sectionPadding flex flex-col lg:flex-row mt-40 justify-evenly gap-10 relative">
+    <section id="faqs" className="sectionGap sectionPadding flex flex-col lg:flex-row mt-40 justify-evenly gap-10 relative">
       <Design className="bottom-[100px] left-0" />
       <Design className="bottom-[-150px] right-0  scale-x-[-1]" />
       <div className="lg:w-[40%]">
