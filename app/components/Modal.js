@@ -25,7 +25,7 @@ export default function Modal({ open, setOpen }) {
             className="absolute top-2 right-2 xl:top-[-20px] xl:right-[-50px] cursor-pointer z-10"
           />
           <Glow className="w-[280px] h-[280px] blur-[150px] top-0 left-0 translate-x-[-50%] translate-y-[-50%]" />
-          <Glow className="w-[100px] h-[100px] blur-[90px] bottom-0 right-0 translate-x-[50%] translate-y-[50%]" />
+          <Glow className="w-[100px] h-[100px] blur-[50px] bottom-0 right-0 translate-x-[50%] translate-y-[40%]" />
           <div className="w-full xl:w-[45%]">
             <h1 className="uppercase NunitoSans text-[40px] xl:text-[65px] font-black xl:leading-[77px]">
               Kick off your project with us!
