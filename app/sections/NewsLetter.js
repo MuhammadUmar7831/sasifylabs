@@ -7,7 +7,7 @@ export default function NewsLetter() {
     <section className="sectionPadding sectionGap pt-[80px]">
       <div className="boxystyle w-full glassmorphism rounded-[5px] py-10 mt-20 mx-auto relative">
         <Glow className="top-[0px] right-[0%] translate-y-[-50%] translate-x-[50%]" />
-        <Glow className="bottom-[0px] left-[0px] translate-x-[-50%] translate-y-[50%] blur-[130px] w-[200px] h-[200px]" />
+        <Glow className="bottom-[0px] left-[0px] translate-x-[-50%] translate-y-[50%] blur-[190px] w-[200px] h-[200px]" />
         <h1 className="font-black text-center text-[20px] md:text-[40px] NunitoSans">
           <span>Newsletter</span>
           <span className="textGradient"> Subscription</span>
