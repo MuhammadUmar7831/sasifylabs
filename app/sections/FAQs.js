@@ -35,7 +35,7 @@ export default function FAQs() {
         className="sectionGap sectionPadding boxystyle mx-auto flex flex-col lg:flex-row mt-40 justify-between gap-10"
       >
         <div className="lg:w-[40%]">
-          <h1 className="text-[30px] md:text-[40px] xl:text-[50px] leading-[68px] font-extrabold">
+          <h1 className="text-[30px] md:text-[40px] xl:text-[50px] md:leading-[68px] font-extrabold">
             <span>Frequently</span>
             <span className="textGradient"> Asked Questions</span>
           </h1>

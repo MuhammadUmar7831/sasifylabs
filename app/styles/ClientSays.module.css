@@ -6,7 +6,16 @@
 .scrollingContentBottom {
     transform: translateX(calc(-50%));
     animation: scroll-right 20s linear infinite;
+    animation-play-state: running;
     width: max-content;
+}
+
+.scrollingContentTop:hover {
+    animation-play-state: paused;
+}
+
+.scrollingContentBottom:hover {
+    animation-play-state: paused;
 }
 
 @keyframes scroll-left {

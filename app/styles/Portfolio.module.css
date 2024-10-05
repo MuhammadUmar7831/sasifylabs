@@ -4,8 +4,16 @@
 }
 
 .scrollingContentBottom {
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-right 15s linear infinite;
     width: max-content;
+}
+
+.scrollingContentTop:hover {
+    animation-play-state: paused;
+}
+
+.scrollingContentBottom:hover {
+    animation-play-state: paused;
 }
 
 @keyframes scroll-left {
@@ -15,5 +23,15 @@
 
     100% {
         transform: translateX(calc(-50%));
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(calc(-50%));
+    }
+
+    100% {
+        transform: translateX(calc(0%));
     }
 }

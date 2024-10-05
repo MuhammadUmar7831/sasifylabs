@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   color: white;
-  z-index: 1;
+  /* z-index: 1; */
   scrollbar-width: none;
   scroll-behavior: smooth;
   @apply text-[#FFFFFFE5]
@@ -21,7 +21,6 @@ body {
   @apply bg-black
 }
 
-/*Fonts*/
 @font-face {
   font-family: IBMPlexSans;
   src: url("/fonts/IBMPlexSans-Regular.ttf");
@@ -58,16 +57,12 @@ body {
 }
 
 .btn {
-  padding-left: 46px;
-  padding-right: 46px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-radius: 15px;
   border: 1px solid black;
   transition: border-color 0.3s ease;
   background: linear-gradient(90deg, #3B0762 0%, #3C0763 14.06%, #3D0866 24.56%, #40096A 32.13%, #430A70 37.36%, #470B76 40.87%, #4C0D7E 43.26%, #510F87 45.14%, #561190 47.12%, #5C1399 49.81%, #6215A2 53.82%, #6717AC 59.75%, #6D19B5 68.21%, #721BBD 79.82%, #771CC5 95.17%, #7B1ECC 114.89%);
   font-weight: 900;
-  @apply text-[16px] md:text-[20px] NunitoSans
+  @apply text-[16px] md:text-[20px] NunitoSans py-[10px] px-[30px] 2xl:px-[46px]
 }
 
 .btn:hover {
@@ -77,7 +72,9 @@ body {
 
 .sectionGap {
   margin-top: 40px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  /* padding-bottom: 40px; */
+  @apply pb-[40px] md:pb-0
 }
 
 .sectionPadding {
@@ -87,7 +84,7 @@ body {
 .heading {
   font-weight: 760;
   text-align: center;
-  @apply text-[30px] md:text-[40px] xl:text-[50px] leading-[68px]
+  @apply text-[16px] md:text-[40px] xl:text-[50px] leading-[0px] md:leading-[68px]
 }
 
 .headingBottomText {
@@ -118,7 +115,7 @@ body {
 }
 
 .boxystyle {
-  @apply max-w-[1169px]
+  @apply max-w-[1169px] 2xl:max-w-[1280px] px-4
 }
 
 @keyframes spin {

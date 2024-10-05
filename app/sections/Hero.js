@@ -7,10 +7,10 @@ export default function Hero() {
   const [menuOpen, setMenuOpen] = useState();
   return (
     <>
-      <Glow className="top-[-30%] left-[100px]" />
+      {/* <Glow className="top-[-30%] left-[100px]" /> */}
       {/* header for laptop screens */}
       <header
-        className={`hidden max-w-[1710px] mx-auto lg:flex justify-between items-center py-[50px] px-[35px] xl:px-[70px]`}
+        className={`hidden boxystyle mx-auto lg:flex justify-between items-center py-[50px] 2xl:px-0`}
       >
         {/* <!-- logo --> */}
         <div>
@@ -51,6 +51,7 @@ export default function Hero() {
             </li>
           </ul>
         </nav>
+
         <button className={`btn`}>Contact Us</button>
       </header>
       {/* header for mobile & tablet */}
@@ -58,7 +59,7 @@ export default function Hero() {
         {menuOpen ? (
           <div
             onClick={() => setMenuOpen(false)}
-            className="glassmorphism rounded-full w-fit p-2 cursor-pointer z-10 fixed"
+            className="bg-[#761CC4] rounded-full w-fit p-2 cursor-pointer z-10 fixed"
           >
             <img
               src="/svgs/cross-menu.svg"
@@ -69,7 +70,7 @@ export default function Hero() {
         ) : (
           <div
             onClick={() => setMenuOpen(true)}
-            className="glassmorphism rounded-full w-fit p-2 cursor-pointer fixed"
+            className="bg-[#761CC4] rounded-full w-fit p-2 cursor-pointer fixed"
           >
             <img
               src="/svgs/burger-menu.svg"
@@ -80,35 +81,47 @@ export default function Hero() {
         )}
         {menuOpen && (
           <div className="top-0 left-0 w-full h-full fixed">
-            <nav className="flex items-center glassmorphism  h-screen p-24 pt-52">
+            <nav className="flex items-center bg-black  h-screen p-24 pt-52">
               <ul className="flex flex-col w-fit gap-5 text-lg IBMPlexSans">
-                <li>
-                  <a href="#about" className="text-[26px]">
+                <li onClick={() => setMenuOpen(false)}>
+                  <a href="#about" className="text-[30px] text-white font-bold">
                     About
                   </a>
                 </li>
-                <li>
-                  <a href="#ourprocess" className="text-[26px]">
+                <li onClick={() => setMenuOpen(false)}>
+                  <a
+                    href="#ourprocess"
+                    className="text-[30px] text-white font-bold"
+                  >
                     Our Process
                   </a>
                 </li>
-                <li>
-                  <a href="#portfolio" className="text-[26px]">
+                <li onClick={() => setMenuOpen(false)}>
+                  <a
+                    href="#portfolio"
+                    className="text-[30px] text-white font-bold"
+                  >
                     Portfolio
                   </a>
                 </li>
-                <li>
-                  <a href="#pricing" className="text-[26px]">
+                <li onClick={() => setMenuOpen(false)}>
+                  <a
+                    href="#pricing"
+                    className="text-[30px] text-white font-bold"
+                  >
                     Pricing
                   </a>
                 </li>
-                <li>
-                  <a href="#clientlove" className="text-[26px]">
+                <li onClick={() => setMenuOpen(false)}>
+                  <a
+                    href="#clientlove"
+                    className="text-[30px] text-white font-bold"
+                  >
                     {"Client's Love"}
                   </a>
                 </li>
-                <li>
-                  <a href="#faqs" className="text-[26px]">
+                <li onClick={() => setMenuOpen(false)}>
+                  <a href="#faqs" className="text-[30px] text-white font-bold">
                     FAQs
                   </a>
                 </li>
@@ -118,11 +131,16 @@ export default function Hero() {
         )}
       </header>
 
-      <section className="max-w-[1820px] mx-4 xl:mx-auto md:pl-[100px] xl:pl-[135px]">
-        <h1 className="textGradient NunitoSans text-[40px] md:text-[65px] font-black lg:max-w-[800px] leading-[68px] uppercase">
+      {/* logo for mobile & tablet */}
+      <div className="flex lg:hidden mx-4">
+        <img src="/svgs/logo.svg" alt="logo" />
+      </div>
+
+      <section className="boxystyle sectionGap mx-4 xl:mx-auto">
+        <h1 className="textGradient NunitoSans text-[40px] md:text-[65px] font-black lg:max-w-[800px] md:leading-[68px] uppercase">
           Kickstart Your Journey with Our MVP Launchpad.
         </h1>
-        <p className="my-5 IBMPlexSans lg:w-[800px] text-[18px] font-medium leading-[32px]">
+        <p className="my-5 IBMPlexSans lg:w-[800px] text-[18px] font-medium md:leading-[32px]">
           Fast-track your digital product development at SaaSify Labs. We
           specialize in turning your SaaS ideas into market-ready products in
           just 16 weeks.
@@ -133,7 +151,11 @@ export default function Hero() {
           <div className="verticalDivider h-[500px] bottom-0 right-[400px] absolute" />
           <div className="verticalDivider h-[459px] bottom-0 right-[300px] absolute" />
           <div className="absolute flex items-end bottom-0 right-[168px]">
-            <img src="./svgs/scrolllerCircle.svg" alt="scrolllerCircle" className="p-4 spin"/>
+            <img
+              src="./svgs/scrolllerCircle.svg"
+              alt="scrolllerCircle"
+              className="p-4 spin"
+            />
             <div className="verticalDivider h-[366px]" />
           </div>
         </div>

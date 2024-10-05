@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Design({ className }) {
   return (
-    <div className={`absolute z-0 ${className}`}>
+    <div className={`absolute z-0 hidden md:block ${className}`}>
       <svg
         width="127"
         height="271"

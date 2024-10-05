@@ -55,8 +55,10 @@ export default function Footer() {
   return (
     <footer className="sectionGap sectionPadding boxystyle mx-auto relative">
       {<Modal open={open} setOpen={setOpen} />}
-      <div className="flex justify-between items-end">
-        <h1 className={`text-[70px] lg:text-[120px] NunitoSans font-black textGradient ${styles.largeText}`}>
+      <div className="flex flex-col md:flex-row justify-between md:items-end gap-6 md:gap-0">
+        <h1
+          className={`text-[50px] md:text-[70px] lg:text-[120px] NunitoSans font-black textGradient ${styles.largeText}`}
+        >
           {"Let's"} Talk.
         </h1>
 
@@ -64,18 +66,30 @@ export default function Footer() {
         <div
           className={`${styles.getaQuoteBtn} transition-colors duration-300 relative group`}
         >
-          <Glow className="top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-opacity w-[180px] h-[180px]" />
-          <button onMouseEnter={handleMouseEnter} className="transition-colors NunitoSans duration-300 text-black" onClick={() => setOpen(true)}>
+          <Glow className="top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-opacity w-[150px] h-[150px] blur-[70px]" />
+          <button
+            onMouseEnter={handleMouseEnter}
+            className="transition-colors NunitoSans duration-300 text-black"
+            onClick={() => setOpen(true)}
+          >
             <span ref={quoteRef}>
               {/* Render each letter */}
               {getA.map((letter, index) => (
-                <span className="text-[#7B1ECC] group-hover:text-white" key={index} style={{ display: "inline-block" }}>
+                <span
+                  className="text-[#7B1ECC] group-hover:text-white"
+                  key={index}
+                  style={{ display: "inline-block" }}
+                >
                   {letter === " " ? "\u00A0" : letter}
                 </span>
               ))}
               <div />
               {quote.map((letter, index) => (
-                <span className="text-[#7B1ECC] group-hover:text-white" key={index} style={{ display: "inline-block" }}>
+                <span
+                  className="text-[#7B1ECC] group-hover:text-white"
+                  key={index}
+                  style={{ display: "inline-block" }}
+                >
                   {letter === " " ? "\u00A0" : letter}
                 </span>
               ))}
@@ -86,20 +100,22 @@ export default function Footer() {
 
       {/* Rest of the footer */}
       <div className="flex mt-10 justify-between flex-col lg:flex-row border-b pb-5 gap-5">
-        <div className="flex items-center gap-2">
-          <div className={`${styles.socialMediaBtn}  p-1 w-fit rounded-full`}>
-            <div className="rounded-full bg-black p-2 w-10 h-10 flex justify-center items-center">
-              <img src="./svgs/instagram.svg" alt="instagram" />
+        <div className="flex flex-col md:flex-row items-center gap-2">
+          <div className="flex gap-2">
+            <div className={`${styles.socialMediaBtn}  p-1 w-fit rounded-full`}>
+              <div className="rounded-full bg-black p-2 w-10 h-10 flex justify-center items-center">
+                <img src="./svgs/instagram.svg" alt="instagram" />
+              </div>
             </div>
-          </div>
-          <div className={`${styles.socialMediaBtn} p-1 w-fit rounded-full`}>
-            <div className="rounded-full bg-black p-2 w-10 h-10 flex justify-center items-center">
-              <img src="./svgs/linkedin.svg" alt="linkedin" />
+            <div className={`${styles.socialMediaBtn} p-1 w-fit rounded-full`}>
+              <div className="rounded-full bg-black p-2 w-10 h-10 flex justify-center items-center">
+                <img src="./svgs/linkedin.svg" alt="linkedin" />
+              </div>
             </div>
-          </div>
-          <div className={`${styles.socialMediaBtn} p-1 w-fit rounded-full`}>
-            <div className="rounded-full bg-black p-2 w-10 h-10 flex justify-center items-center">
-              <img src="./svgs/facebook.svg" alt="facebook" />
+            <div className={`${styles.socialMediaBtn} p-1 w-fit rounded-full`}>
+              <div className="rounded-full bg-black p-2 w-10 h-10 flex justify-center items-center">
+                <img src="./svgs/facebook.svg" alt="facebook" />
+              </div>
             </div>
           </div>
           <span className="NunitoSans text-[25px] font-black">

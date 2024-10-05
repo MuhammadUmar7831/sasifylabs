@@ -1,15 +1,14 @@
 .getaQuoteBtn button {
     height: 100%;
     border-radius: 50%;
-    padding: 20px;
     line-height: 30.9px;
-    @apply bg-black
+    @apply bg-black p-[20px]
 }
 
 .getaQuoteBtn>button>span {
-    font-size: 30px;
     font-family: NunitoSans;
     font-weight: 900;
+    @apply text-[20px] md:text-[30px]
 }
 
 .getaQuoteBtn {
