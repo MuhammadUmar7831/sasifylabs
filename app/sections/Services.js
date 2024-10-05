@@ -5,7 +5,7 @@ import Design from "../components/Design";
 function ServiceBox({ title, price, description, features }) {
   return (
     <div className="md:w-[40%] lg:w-[367px] glassmorphism rounded-[5px]">
-      <div className={`${styles.gradeint} px-10 py-6 space-y-2`}>
+      <div className={`${styles.gradeint} px-10 py-6 space-y-2 h-[35%]`}>
         <h1 className="text-[25px] font-black NunitoSans">{title}</h1>
         <div className="p-1 rounded-full bg-white text-black text-[20px] font-bold w-fit IBMPlexSans leading-[28px]">
           ({price})

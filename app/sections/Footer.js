@@ -66,7 +66,7 @@ export default function Footer() {
         <div
           className={`${styles.getaQuoteBtn} transition-colors duration-300 relative group`}
         >
-          <Glow className="top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-opacity w-[150px] h-[150px] blur-[70px]" />
+          <Glow className="top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-opacity w-[120px] h-[110px] blur-[110px]" />
           <button
             onMouseEnter={handleMouseEnter}
             className="transition-colors NunitoSans duration-300 text-black"
