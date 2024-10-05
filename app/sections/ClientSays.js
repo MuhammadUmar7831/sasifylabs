@@ -7,7 +7,7 @@ function TestimonialCard({ clientData }) {
   const { company, designation, quote, image, clientName } = clientData;
 
   return (
-    <div className="glassmorphism w-[500px] px-6 py-12 space-y-4 rounded-[5px] mx-2">
+    <div className="glassmorphism w-[463.77px] h-[484px] px-6 py-12 space-y-4 rounded-[5px] mx-2">
       <img src="./svgs/quote.svg" alt="quote" />
       <div className="flex gap-1">
         <img className="w-6 h-6" src="./svgs/star.svg" alt="star" />
@@ -37,7 +37,7 @@ function TestimonialCard({ clientData }) {
 
 export default function ClientSays() {
   return (
-    <section id="clientlove" className="sectionGap relative">
+    <section id="clientlove" className="sectionGap relative pt-[200px]">
       <Glow className="top-[50%] left-[0px]" />
       <Design className="top-[-150px] left-0" />
       <Design className="top-[-100px] right-0 scale-x-[-1]" />
@@ -49,7 +49,7 @@ export default function ClientSays() {
         Voices of Success: Hear From Our Clients How We Consistently Exceed
         Expectations
       </p>
-      <div className={`flex overflow-hidden w-max flex-wrap gap-7 mt-10 ${styles.scrollingContent}`}>
+      <div className={`flex overflow-hidden w-max flex-wrap gap-7 mt-10 ${styles.scrollingContentTop}`}>
         {clientData.map((client, index) => (
           <TestimonialCard key={index} clientData={client} />
         ))}
@@ -57,7 +57,7 @@ export default function ClientSays() {
           <TestimonialCard key={index} clientData={client} />
         ))}
       </div>
-      <div className={`flex overflow-hidden w-max flex-wrap gap-7 ml-[-100px] mt-10 ${styles.scrollingContent}`}>
+      <div className={`flex overflow-hidden w-max flex-wrap gap-7 ml-[-100px] mt-10 ${styles.scrollingContentBottom}`}>
         {clientData.map((client, index) => (
           <TestimonialCard key={index} clientData={client} />
         ))}

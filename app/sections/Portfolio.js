@@ -8,18 +8,23 @@ function GlassBoxItem({ title, description }) {
     <div className="flex md:w-[45%] lg:w-[30%]">
       <img src="/svgs/upArrow.svg" alt="icon" className="w-[49px] h-[52px]" />
       <div>
-        <h2 className="text-[25px] font-black NunitoSans">{title}</h2>
-        <p className="text-[18px] IBMPlexSans">{description}</p>
+        <h2 className="text-[25px] leading-[34px] font-black NunitoSans">
+          {title}
+        </h2>
+        <p className="text-[18px] leading-[23.4px] IBMPlexSans">
+          {description}
+        </p>
       </div>
     </div>
   );
 }
 
-function ImageSlider({ urls, className }) {
+function ImageSlider({ urls, className, isTop }) {
   return (
     <div
-      data={"20s"}
-      className={`flex overflow-x-hidden gap-[15px] ${className} ${styles.scrollingContent}`}
+      className={`flex overflow-x-hidden gap-[15px] ${className} ${
+        isTop ? styles.scrollingContentTop : styles.scrollingContentBottom
+      }`}
     >
       {urls.map((url, idx) => (
         <img
@@ -44,7 +49,7 @@ function ImageSlider({ urls, className }) {
 export default function Portfolio() {
   return (
     <section id="portfolio" className="sectionGap relative">
-      <Glow className="top-[350px] left-[-100px]" />
+      <Glow className="top-[500px] left-[-100px]" />
       <Design className="top-[-150px]" />
       <h1 className="heading">
         <span>Our Work</span>
@@ -53,14 +58,18 @@ export default function Portfolio() {
       <p className="headingBottomText">
         Check out some of our recent work for clients!
       </p>
-      <div className="mt-10 space-y-5">
-        <ImageSlider urls={images1} />
-        <ImageSlider urls={images2} className="ml-[100px]" />
+      <div className="mt-[80px] space-y-5">
+        <ImageSlider isTop={true} urls={images1} />
+        <ImageSlider
+          isTop={false}
+          urls={images2}
+          className="ml-[100px] duration-1000"
+        />
       </div>
 
       {/* Rendering the GlassBoxItems dynamically */}
-      <div className="boxystyle relative mt-20 w-[90%] glassmorphism mx-auto flex flex-wrap justify-between gap-10 px-4 py-16 rounded-[5px]">
-      <Glow className="top-[0px] left-[0px] translate-x-[-50%] translate-y-[-50%] bg-opacity-90" />
+      <div className="relative mt-20 w-[90%] max-w-[1170px] glassmorphism mx-auto flex flex-wrap justify-between gap-10 px-4 py-16 rounded-[5px]">
+        {/* <Glow className="top-[0px] left-[0px] translate-x-[-50%] translate-y-[-50%] z-[-1]" /> */}
         {glassBoxData.map((item, index) => (
           <GlassBoxItem
             key={index}

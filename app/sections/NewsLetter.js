@@ -4,7 +4,7 @@ import Glow from "../components/Glow";
 
 export default function NewsLetter() {
   return (
-    <section className="sectionPadding sectionGap">
+    <section className="sectionPadding sectionGap pt-[80px]">
       <div className="boxystyle w-full glassmorphism rounded-[5px] py-10 mt-20 mx-auto relative">
         <Glow className="top-[0px] right-[0%] translate-y-[-50%] translate-x-[50%]" />
         <Glow className="bottom-[0px] left-[0px] translate-x-[-50%] translate-y-[50%]" />

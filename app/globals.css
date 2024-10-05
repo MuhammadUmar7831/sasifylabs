@@ -10,6 +10,7 @@
   z-index: 1;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  @apply text-[#FFFFFFE5]
 }
 
 html,
@@ -57,17 +58,16 @@ body {
 }
 
 .btn {
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 0.75rem;
-  border: 2px solid black;
-  font-size: 1.25rem;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
   transition: border-color 0.3s ease;
   background: linear-gradient(90deg, #3B0762 0%, #3C0763 14.06%, #3D0866 24.56%, #40096A 32.13%, #430A70 37.36%, #470B76 40.87%, #4C0D7E 43.26%, #510F87 45.14%, #561190 47.12%, #5C1399 49.81%, #6215A2 53.82%, #6717AC 59.75%, #6D19B5 68.21%, #721BBD 79.82%, #771CC5 95.17%, #7B1ECC 114.89%);
   font-weight: 900;
-  @apply text-[16px] md:text-[20px]
+  @apply text-[16px] md:text-[20px] NunitoSans
 }
 
 .btn:hover {
@@ -76,35 +76,33 @@ body {
 }
 
 .sectionGap {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .sectionPadding {
-  @apply px-[40px] xl:px-[135px]
+  @apply px-[40px] xl:px-[0px]
 }
 
 .heading {
-  font-weight: 900;
+  font-weight: 760;
   text-align: center;
-  @apply text-[30px] md:text-[40px] xl:text-[50px]
+  @apply text-[30px] md:text-[40px] xl:text-[50px] leading-[68px]
 }
 
 .headingBottomText {
   margin: auto;
   text-align: center;
   font-size: 18px;
-  margin-top: 8px;
+  margin-top: 15px;
   font-family: IBMPlexSans;
   font-weight: 400;
+  line-height: 23.4px;
 }
 
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #FFFFFF40;
+  background-color: #FFFFFF1A;
 }
 
 .sectionDivider {

@@ -3,9 +3,9 @@ import Design from "../components/Design";
 
 export default function Awards() {
   return (
-    <section className="sectionGap relative">
-      <Design className="top-[-150px] left-0" />
-      <Design className="top-[-100px] right-0 scale-x-[-1]" />
+    <section className="sectionGap relative pt-[100px]">
+      <Design className="top-[0px] left-0" />
+      <Design className="top-[0px] right-0 scale-x-[-1]" />
       <h1 className="heading">
         <span>Awards</span>
         <span className="textGradient"> & Recognition</span>

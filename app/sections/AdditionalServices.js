@@ -6,7 +6,7 @@ import Glow from "../components/Glow";
 
 function AdditionalServiceCard({ service }) {
   return (
-    <div className="flex flex-col gap-5 glassmorphism justify-center items-center w-[369px] px-6 py-12 rounded-[5px] mt-[40px]">
+    <div className="flex flex-col gap-5 glassmorphism justify-center items-center w-[369px] px-6 py-12 rounded-[5px] mt-[70px] relative">
       <div className={`${styles.gradient}`}>
         <img src={service.image} alt={service.name} />
       </div>
@@ -20,15 +20,15 @@ function AdditionalServiceCard({ service }) {
 
 export default function AdditionalServices() {
   return (
-    <section className="sectionGap relative">
-      <Glow className="top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+    <section className="sectionGap pt-[100px] relative">
+      <Glow className="top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[350px]" />
       <Design className="top-[-150px] left-0" />
       <Design className="top-[-100px] right-0 scale-x-[-1]" />
       <h1 className="heading">
         <span>Additional</span>
         <span className="textGradient"> Expertise & Services</span>
       </h1>
-      <div className="boxystyle mx-auto w-full mt-20 flex flex-wrap gap-7 justify-center">
+      <div className="boxystyle mx-auto w-full mt-10 flex flex-wrap gap-7 justify-center">
         {services.map((service, index) => (
           <AdditionalServiceCard key={index} service={service} />
         ))}

@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { gsap } from "gsap";
 import styles from "@/app/styles/Footer.module.css";
 import Modal from "../components/Modal";
+import Glow from "../components/Glow";
 
 export default function Footer() {
   const [open, setOpen] = useState(false);
@@ -10,8 +11,9 @@ export default function Footer() {
   const quoteRef = useRef(null);
 
   // Split the button text into letters
-  const buttonText = "Get a Quote";
-  const letters = buttonText.split("");
+  // const buttonText = "GET A QUOTE.";
+  const getA = "GET A".split("");
+  const quote = "QUOTE".split("");
 
   // Function to animate on hover
   const handleMouseEnter = () => {
@@ -51,23 +53,29 @@ export default function Footer() {
   };
 
   return (
-    <footer className="sectionGap sectionPadding relative">
+    <footer className="sectionGap sectionPadding boxystyle mx-auto relative">
       {<Modal open={open} setOpen={setOpen} />}
-      <div className="flex justify-between items-center">
-        <h1 className="text-[70px] lg:text-[120px] font-black textGradient">
-          {"Let's"} Talk
+      <div className="flex justify-between items-end">
+        <h1 className={`text-[70px] lg:text-[120px] NunitoSans font-black textGradient ${styles.largeText}`}>
+          {"Let's"} Talk.
         </h1>
 
         {/* Get a Quote Button with GSAP Animation */}
         <div
-          className={`${styles.getaQuoteBtn} transition-colors duration-300`}
-          onMouseEnter={handleMouseEnter}
+          className={`${styles.getaQuoteBtn} transition-colors duration-300 relative group`}
         >
-          <button className="transition-colors duration-300" onClick={() => setOpen(true)}>
+          <Glow className="top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-opacity w-[180px] h-[180px]" />
+          <button onMouseEnter={handleMouseEnter} className="transition-colors NunitoSans duration-300 text-black" onClick={() => setOpen(true)}>
             <span ref={quoteRef}>
               {/* Render each letter */}
-              {letters.map((letter, index) => (
-                <span key={index} style={{ display: "inline-block" }}>
+              {getA.map((letter, index) => (
+                <span className="text-[#7B1ECC] group-hover:text-white" key={index} style={{ display: "inline-block" }}>
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              ))}
+              <div />
+              {quote.map((letter, index) => (
+                <span className="text-[#7B1ECC] group-hover:text-white" key={index} style={{ display: "inline-block" }}>
                   {letter === " " ? "\u00A0" : letter}
                 </span>
               ))}

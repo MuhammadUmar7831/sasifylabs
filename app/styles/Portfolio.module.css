@@ -1,5 +1,10 @@
-.scrollingContent {
+.scrollingContentTop {
     animation: scroll-left 20s linear infinite;
+    width: max-content;
+}
+
+.scrollingContentBottom {
+    animation: scroll-left 15s linear infinite;
     width: max-content;
 }
 

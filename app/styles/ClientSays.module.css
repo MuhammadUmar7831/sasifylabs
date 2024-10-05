@@ -1,5 +1,11 @@
-.scrollingContent {
+.scrollingContentTop {
     animation: scroll-left 20s linear infinite;
+    width: max-content;
+}
+
+.scrollingContentBottom {
+    transform: translateX(calc(-50%));
+    animation: scroll-right 20s linear infinite;
     width: max-content;
 }
 
@@ -10,5 +16,15 @@
 
     100% {
         transform: translateX(calc(-50%));
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(calc(-50%));
+    }
+
+    100% {
+        transform: translateX(calc(0%));
     }
 }

@@ -9,7 +9,7 @@ export default function About() {
           <span>About</span>
           <span class="textGradient"> Us</span>
         </h1>
-        <p class="mx-auto text-center text-lg mt-5 max-w-[1016px]">
+        <p class="mx-auto IBMPlexSans text-center text-[18px] mt-5 max-w-[1016px] leading-[30px]">
           We help entrepreneurs and business leaders build and launch innovative
           custom software solutions to the market across a range of verticals &
           industries. We can help you turn your vision into a successful product
@@ -17,7 +17,7 @@ export default function About() {
           UX/UI services, full product custom software development or help to
           scale your company.
         </p>
-        <p class="mx-auto text-center text-lg mt-5 max-w-[1151px]">
+        <p class="mx-auto IBMPlexSans text-center text-[18px] mt-5 max-w-[1151px] leading-[30px]">
           <strong>Vision:</strong> We aim to be the global partner of choice,
           transforming ideas into leading digital products that advance
           industries and drive innovation.

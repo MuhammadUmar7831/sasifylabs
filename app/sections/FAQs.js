@@ -27,38 +27,43 @@ function FAQBox({ question, answer, collapse }) {
 
 export default function FAQs() {
   return (
-    <section id="faqs" className="sectionGap sectionPadding flex flex-col lg:flex-row mt-40 justify-evenly gap-10 relative">
+    <div className="relative pt-[100px]">
       <Design className="bottom-[100px] left-0" />
       <Design className="bottom-[-150px] right-0  scale-x-[-1]" />
-      <div className="lg:w-[40%]">
-        <h1 className="heading">
-          <span>Frequently</span>
-          <span className="textGradient"> Asked Questions</span>
-        </h1>
-        <p className={`${styles.para} IBMPlexSans`}>
-          Gain insights into how we streamline your path to launching successful
-          digital products. Explore common queries about our services to
-          understand better how we can help turn your ideas into market-ready
-          SaaS solutions.
-        </p>
-        <div className="flex gap-2 mt-5">
-          <button className={`${styles.btn} NunitoSans`}>Contact Us</button>
-          <button className={`${styles.btn} NunitoSans`}>
-            View Our Portfolio
-          </button>
+      <section
+        id="faqs"
+        className="sectionGap sectionPadding boxystyle mx-auto flex flex-col lg:flex-row mt-40 justify-between gap-10"
+      >
+        <div className="lg:w-[40%]">
+          <h1 className="text-[30px] md:text-[40px] xl:text-[50px] leading-[68px] font-extrabold">
+            <span>Frequently</span>
+            <span className="textGradient"> Asked Questions</span>
+          </h1>
+          <p className={`${styles.para} IBMPlexSans`}>
+            Gain insights into how we streamline your path to launching
+            successful digital products. Explore common queries about our
+            services to understand better how we can help turn your ideas into
+            market-ready SaaS solutions.
+          </p>
+          <div className="flex gap-2 mt-5">
+            <button className={`${styles.btn} NunitoSans`}>Contact Us</button>
+            <button className={`${styles.btn} NunitoSans`}>
+              View Our Portfolio
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="lg:w-[60%] space-y-5">
-        {faqs.map((faq, idx) => (
-          <FAQBox
-            key={idx}
-            question={faq.question}
-            answer={faq.answer}
-            collapse={idx !== 0}
-          />
-        ))}
-      </div>
-    </section>
+        <div className="lg:w-[60%] space-y-5">
+          {faqs.map((faq, idx) => (
+            <FAQBox
+              key={idx}
+              question={faq.question}
+              answer={faq.answer}
+              collapse={idx !== 0}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
 

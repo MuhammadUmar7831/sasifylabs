@@ -39,7 +39,7 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeInVariants}
-        className={`glassmorphism ${styles.box} group md:max-w-[511px] mx-4 md:mx-auto xl:mx-0 overflow-x-hidden`}
+        className={`glassmorphism ${styles.box} group md:max-w-[511px] mx-4 md:mx-auto xl:mx-0`}
       >
         <div className={`${styles.boxGlow} group-hover:opacity-100 `}></div>
         <div
@@ -47,10 +47,10 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
         >
           <h3>Step-{step}</h3>
         </div>
-        <h1 className="text-[25px] md:text-[35px] font-black w-2/3 leading-[36px] NunitoSans">
+        <h1 className="text-[25px] md:text-[35px] font-black w-[385px] leading-[36px] NunitoSans">
           {heading}
         </h1>
-        <p className="md:text-[18px] font-normal mt-[15px] IBMPlexSans">
+        <p className="md:text-[18px] font-normal mt-[8px] IBMPlexSans leading-[25.4px]">
           {para}
         </p>
       </motion.div>
@@ -76,12 +76,12 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
 export default function HowItWork() {
   return (
     <section className="sectionGap relative">
-      <Glow className="top-0 right-[-100px]" />
+      <Glow className="top-[40px] right-[-200px]" />
       <Design className="right-0 scale-x-[-1]" />
       <Design className="left-0 top-[30%]" />
       <Design className="right-0 top-[100%] scale-x-[-1]" />
       <h1 className="heading">
-        <span>How it</span>
+        <span>How It</span>
         <span className="textGradient"> Works</span>
       </h1>
       <div className="w-full mt-10">
@@ -103,7 +103,7 @@ export default function HowItWork() {
 const steps = [
   {
     step: "01",
-    heading: "Defining the Product Scope",
+    heading: "Defining The Product Scope",
     para: `Our journey begins with a focused, 7-day session to define the
             scope of your digital product. During this session, we align on
             vision and technical requirements, setting a solid foundation for

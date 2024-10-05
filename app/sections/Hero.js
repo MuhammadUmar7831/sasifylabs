@@ -10,7 +10,7 @@ export default function Hero() {
       <Glow className="top-[-30%] left-[100px]" />
       {/* header for laptop screens */}
       <header
-        className={`hidden lg:flex justify-between items-center py-[50px] px-[35px] xl:px-[70px]`}
+        className={`hidden max-w-[1710px] mx-auto lg:flex justify-between items-center py-[50px] px-[35px] xl:px-[70px]`}
       >
         {/* <!-- logo --> */}
         <div>
@@ -118,11 +118,11 @@ export default function Hero() {
         )}
       </header>
 
-      <section className="max-w-[1440px] mx-4 xl:mx-auto md:pl-[100px] xl:pl-[135px]">
-        <h1 className="textGradient NunitoSans text-[40px] md:text-[65px] font-black lg:max-w-[800px] uppercase">
+      <section className="max-w-[1820px] mx-4 xl:mx-auto md:pl-[100px] xl:pl-[135px]">
+        <h1 className="textGradient NunitoSans text-[40px] md:text-[65px] font-black lg:max-w-[800px] leading-[68px] uppercase">
           Kickstart Your Journey with Our MVP Launchpad.
         </h1>
-        <p className="my-5 IBMPlexSans lg:w-[800px] text-[18px] font-medium">
+        <p className="my-5 IBMPlexSans lg:w-[800px] text-[18px] font-medium leading-[32px]">
           Fast-track your digital product development at SaaSify Labs. We
           specialize in turning your SaaS ideas into market-ready products in
           just 16 weeks.
@@ -134,7 +134,6 @@ export default function Hero() {
           <div className="verticalDivider h-[459px] bottom-0 right-[300px] absolute" />
           <div className="absolute flex items-end bottom-0 right-[168px]">
             <img src="./svgs/scrolllerCircle.svg" alt="scrolllerCircle" className="p-4 spin"/>
-            {/* <div className="w-[50px]"/> */}
             <div className="verticalDivider h-[366px]" />
           </div>
         </div>
