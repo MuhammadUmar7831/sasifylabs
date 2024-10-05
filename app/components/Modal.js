@@ -101,8 +101,9 @@ export default function Modal({ open, setOpen }) {
             I need assistance with:
           </p>
           <div className="space-y-1 mt-2 ml-4">
-            {messages.map((mg) => (
+            {messages.map((mg, idx) => (
               <p
+                key={idx}
                 onClick={() => setMessage(mg)}
                 className="bg-[#FFFFFF33] px-3 py-2 rounded-[4px] border border-[#FFFFFF33] w-fit"
               >
