@@ -2,9 +2,11 @@
 import React, { useState } from "react";
 import Glow from "../components/Glow";
 import styles from "@/app/styles/Hero.module.css";
+import Modal from "../components/Modal";
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState();
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
       {/* <Glow className="top-[-30%] left-[100px]" /> */}
@@ -52,7 +54,7 @@ export default function Hero() {
           </ul>
         </nav>
 
-        <button className={`btn`}>Contact Us</button>
+        <button onClick={()=>setModalOpen(true)} className={`btn`}>Contact Us</button>
       </header>
       {/* header for mobile & tablet */}
       <header className="relative w-full lg:hidden flex justify-end p-[20px] md:p-[35px] z-10">
@@ -188,6 +190,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
+      <Modal open={modalOpen} setOpen={setModalOpen} />
       <div className="sectionDivider" />
     </>
   );
