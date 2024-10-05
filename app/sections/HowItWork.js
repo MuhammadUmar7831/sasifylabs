@@ -1,11 +1,14 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "@/app/styles/HowItWork.module.css";
 import Glow from "../components/Glow";
 import Design from "../components/Design";
 import { motion } from "framer-motion";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Reusable HowItWorkBox component
+gsap.registerPlugin(ScrollTrigger);
+
 function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
   const fadeInVariants = {
     hidden: {
@@ -19,13 +22,22 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
     },
   };
 
-  const grayscaleVariants = {
-    hidden: { filter: "grayscale(100%)" },
-    visible: {
-      filter: "grayscale(0%)",
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
+  const boxRef = useRef(null);
+  const lineColoredRef = useRef(null);
+
+  useEffect(() => {
+    if (!boxRef.current || !lineColoredRef.current) return;
+
+    ScrollTrigger.create({
+      trigger: boxRef.current,
+      start: "top center",
+      end: "bottom center",
+      onUpdate: (self) => {
+        const progress = self.progress;
+        lineColoredRef.current.style.height = `${progress * 100}%`;
+      },
+    });
+  }, []);
 
   return (
     <section
@@ -33,6 +45,7 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
       className={`w-full flex flex-wrap justify-center xl:gap-10 ${
         isOnRight ? "flex-col xl:flex-row-reverse" : "flex-col xl:flex-row"
       }`}
+      ref={boxRef}
     >
       <motion.div
         initial="hidden"
@@ -55,17 +68,23 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
         </p>
       </motion.div>
       <div className={styles.howItWorkDividerSection}>
-        <span className={`${styles.howItWorkDividerCircleOuter} hidden xl:flex`}>
-          <span className={`${styles.howItWorkDividerCircleInner} hidden xl:block`}></span>
+        <span
+          className={`${styles.howItWorkDividerCircleOuter} hidden xl:flex`}
+        >
+          <span
+            className={`${styles.howItWorkDividerCircleInner} hidden xl:block`}
+          ></span>
         </span>
         {!isLast && (
-          <motion.span
-            className={styles.howItWorkDividerLine}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={grayscaleVariants}
-          ></motion.span>
+          <div className="relative h-[291px]">
+            <span
+              className={`${styles.howItWorkDividerLineGray} inline-block`}
+            ></span>
+            <span
+              ref={lineColoredRef}
+              className={`${styles.howItWorkDividerLineColored} inline-block absolute top-0 left-0`}
+            ></span>
+          </div>
         )}
       </div>
       <div className="hidden xl:block w-[511px]"></div>
