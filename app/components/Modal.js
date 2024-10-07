@@ -78,11 +78,11 @@ export default function Modal({ open, setOpen }) {
             </div>
             <div className="mx-auto w-fit mt-[50px] space-y-[19px]">
               <div className="flex gap-[12px] items-center">
-                <div className="bg-white opacity-30 h-[1px] max-w-[130px]" />
-                <p className="text-[18px] IBMPlexSans leading-[28.4px]">
+                <div className="bg-white opacity-30 h-[1px] z-10 w-full xl:w-[130px] max-w-[130px]" />
+                <p className="text-[18px] IBMPlexSans leading-[28.4px] text-nowrap">
                   Contact With Us On
                 </p>
-                <div className="bg-white opacity-30 h-[1px] max-w-[130px]" />
+                <div className="bg-white opacity-30 h-[1px] z-10 w-full xl:w-[130px] max-w-[130px]" />
               </div>
               <div className="flex gap-[27px] justify-center">
                 <img src="./svgs/modal/facebook.svg" alt="facebook" />
