@@ -76,7 +76,7 @@ export default function Modal({ open, setOpen }) {
                 </div>
               </div>
             </div>
-            <div className="mx-autos ml-[50%] translate-x-[-60%] w-fit mt-[70px] space-y-[19px]">
+            <div className="mx-auto xl:ml-[50%] xl:translate-x-[-60%] w-fit mt-[70px] space-y-[19px]">
               <div className="flex gap-[12px] items-center">
                 <div className="bg-white opacity-30 h-[1px] z-10 w-full xl:w-[130px] max-w-[130px]" />
                 <p className="text-[18px] IBMPlexSans leading-[28.4px] text-nowrap">
