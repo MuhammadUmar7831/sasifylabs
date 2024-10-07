@@ -27,7 +27,7 @@ export default function Modal({ open, setOpen }) {
     return <></>;
   }
   return (
-    <div className="h-screen overflow-y-scroll fixed top-0 left-0 w-full bg-black z-10">
+    <div className="h-screen w-screen overflow-y-scroll overflow-x-hidden fixed top-0 left-0 bg-black z-10">
       <div className="pt-[50px] flex justify-center items-center py-2">
         <div className="glassmorphism w-[90%] max-w-[1600px] h-fit rounded-[5px] flex justify-evenly items-center flex-col xl:flex-row px-4 py-10 relative">
           <img
