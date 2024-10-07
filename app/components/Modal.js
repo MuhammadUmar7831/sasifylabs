@@ -1,16 +1,28 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/app/styles/Modal.module.css";
 import Glow from "./Glow";
 
 export default function Modal({ open, setOpen }) {
-  const [message, setMessage] = useState();
+  const [message, setMessage] = useState("");
   const messages = [
     "Bring a new product to market 🚀",
     "Scale or revamp an existing platform 📈",
     "Rescue my project 🔥",
     "Something else entirely…👽",
   ];
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [open]);
+
   if (!open) {
     return <></>;
   }
@@ -100,16 +112,16 @@ export default function Modal({ open, setOpen }) {
                 placeholder="Phone Number*"
               />
             </div>
-            <p className="IBMPlexSans text-[18px] font-medium ml-4">
+            <p className="IBMPlexSans text-[18px] font-medium">
               I need assistance with:
             </p>
-            <div className="space-y-1 mt-2 ml-4">
+            <div className="space-y-1 mt-2">
               {messages.map((mg, idx) => (
                 <p
                   key={idx}
                   onClick={() => setMessage(mg)}
-                  className={`bg-[#FFFFFF33] px-3 py-2 rounded-[4px] cursor-pointer border border-[#FFFFFF33] w-fit ${
-                    mg === message ? "bg-[#3C0763]" : ""
+                  className={`px-3 py-2 rounded-[4px] cursor-pointer border border-[#FFFFFF33] w-fit ${
+                    mg === message ? "bg-[#3C0763]" : "bg-[#FFFFFF33]"
                   }`}
                 >
                   {mg}

@@ -95,7 +95,7 @@ function HowItWorkBox({ step, heading, para, isOnRight, isLast }) {
 export default function HowItWork() {
   return (
     <section className="sectionGap relative">
-      <Glow className="top-[40px] right-[-200px]" />
+      <Glow className="top-[40px] right-[-150px] w-[505px] h-[380px] blur-[220px]" />
       <Design className="right-0 scale-x-[-1]" />
       <Design className="left-0 top-[30%]" />
       <Design className="right-0 top-[100%] scale-x-[-1]" />
@@ -163,3 +163,14 @@ const steps = [
     isOnRight: false,
   },
 ];
+
+/* Ellipse 2 */
+
+// position: absolute;
+// width: 505px;
+// height: 380px;
+// left: 1086px;
+// top: 1376px;
+
+// background: linear-gradient(90deg, #3B0762 -73.73%, #9747FF 116.88%);
+// filter: blur(250px);

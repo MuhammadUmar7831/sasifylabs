@@ -37,7 +37,7 @@ function TestimonialCard({ clientData }) {
 
 export default function ClientSays() {
   return (
-    <section id="clientlove" className="sectionGap relative pt-[200px]">
+    <section id="clientlove" className="sectionGap relative pt-[50px]">
       <Glow className="top-[50%] left-[0px]" />
       <Design className="top-[-150px] left-0" />
       <Design className="top-[-100px] right-0 scale-x-[-1]" />
