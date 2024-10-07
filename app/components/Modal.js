@@ -27,7 +27,7 @@ export default function Modal({ open, setOpen }) {
     return <></>;
   }
   return (
-    <div className="h-screen w-screen overflow-y-scroll overflow-x-hidden fixed top-0 left-0 bg-black z-10">
+    <div className="h-screen w-screen overflow-y-scroll xl:overflow-x-hidden fixed top-0 left-0 bg-black z-10">
       <div className="pt-[50px] flex justify-center items-center py-2">
         <div className="glassmorphism w-[90%] max-w-[1600px] h-fit rounded-[5px] flex justify-evenly items-center flex-col xl:flex-row px-4 py-10 relative">
           <img
@@ -66,7 +66,7 @@ export default function Modal({ open, setOpen }) {
                 </div>
               </div>
               <div className="flex gap-5">
-                <img src="./svgs/modal/phone.svg" alt="phone" />
+                <img src="./svgs/modal/location.svg" alt="phone" />
                 <div className="IBMPlexSans">
                   <h1 className="text-[15px] font-bold">Our Office Location</h1>
                   <h2 className="text-[15px]">Our Location</h2>
@@ -76,7 +76,7 @@ export default function Modal({ open, setOpen }) {
                 </div>
               </div>
             </div>
-            <div className="mx-auto w-fit mt-[50px] space-y-[19px]">
+            <div className="mx-autos ml-[50%] translate-x-[-60%] w-fit mt-[70px] space-y-[19px]">
               <div className="flex gap-[12px] items-center">
                 <div className="bg-white opacity-30 h-[1px] z-10 w-full xl:w-[130px] max-w-[130px]" />
                 <p className="text-[18px] IBMPlexSans leading-[28.4px] text-nowrap">
